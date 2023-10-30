@@ -1,0 +1,1 @@
+This project is meant to be a repository for all the projects we did in class, which should be continuously updated throughout the class. When the bootcamp is over we should have a good looking site to show the work we put in to potential employers.

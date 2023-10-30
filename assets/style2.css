@@ -1,0 +1,131 @@
+/* notes for future self as I ran out of time to finish what i want. Add an image background
+in css. try to get picture to align to the left with text filling
+out the right within .aboutbox. Also write a better paragraph within that section.
+Later adjust the about me header to sit on the left and have a different stylebackground to
+said heading. Also, play with differnt background colors for the boxes and take some better
+photos of yourself. Add in hover effects on the project boxes.*/
+
+:root {
+    --background: rgb(196, 180, 203);
+    --popcolor: rgb(236, 100, 236);
+    --baase-font: 'Calibri', sans-serif;
+    --heading-font: 'Helvetica', serif;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--baase-font);
+    font-size: 110%;
+}
+/* navigation area starts here */
+.titlediv {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 5px;
+    border: 5px solid purple;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.titlediv h1 {
+    margin-right: 20px;
+    color: rgb(74, 7, 69);
+}
+
+.navbox {
+    display: flex;
+    align-content: center;
+}
+
+.navitem {
+   margin-right: 10px;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+/* navigation ends here */
+
+/* about me begins here */
+/* need to re-adjust later to make last box on page not stretch so far and center on the page */
+.aboutbox {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid purple;
+    gap: 5%;
+    width: 75%;
+    margin: auto;
+}
+
+.aboutbox h2 {
+    color: rgb(19, 3, 143);
+}
+
+#jphoto {
+    max-width: 70%;
+    align-self: center;
+}
+
+
+h2 {
+    display: flex;
+    position: flex;
+    justify-content: center;
+
+}
+/* aboutme ends here */
+
+/* projects board begins here */
+.projectsbox {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cardprojects {
+    background: url("https://lh3.googleusercontent.com/pw/ADCreHc4YZhzazeoYyjVwxranWXwTUe0UMZkyz3dLtcQjGNxdeVYa3Ys2QwMzixI3y2qWscTXvpIEhFScRyVyS_0EO2uDyk2VkGvP_VGUV1I9KLQy8l-WWtTLudER380NBJoS2kaXQJaxM6XPqEXEOxjVbQK76i6qYY_l-aDfCbFKCmAGvFmtBHgaGXkU_iJMC1UxNvZf9LRPdb--oI3VAaxbP6OjeAzpvHQ1Vuby0ELLYX7ZG-cj9iE0Eqt2iH3SUA3OvDx5uRkDaGHEn7eZBHGQXA6O0dh5QXNkb1_sLMn_uWgLh7mpLz833Fg6-UgLNqXKdXfDORqlJX3ZHPjI-D4ngQvAO9faVpO3fbUI_yE7hlyTHzLdbZhlIbcF2ylx2HRo47MuvvJ8MRPe0aQ6ceEnOytKjZML0f1yLQ4qgVAk5Bw3PIE9eVDQmqpg4iYYe5o3Y6ELvMPp8cpFO9r6DnF__D405ioQsJJ6T6I7g7SZeP1y6zgo9dJuBWWNPGECQi6H7JETBKzLMoPbjyJnzG9k4y0JZ7-LodA8NKw6ScytTUgfC0iOCuspGLmSa-KQxg0jmCaeiZ4K26-jTXpr7MqD39c0699YY8NIXcGe-i7X6_i-uhvJ8iQ6vTsM3-_mejUigSfiUd6csa1VfnoE8iOm4bhu_pVvvFbCFhQtVRqqM4rYw_uO2nfpsZYr6hp2svbzmM9QRUjfpda842oJIfPFlZbpVA7WARLcgJ-738AMS7aQiDNTeStjViN7yWxNX96PzQrYc47LGTWc3zdePEiPMf_zJYE_8_xwAsq6fiy588vpw-dIfsfyx1Xy3wCTo8yretSQp41dZyNF4Q-O3OepyblkICiRYRqbkL9ajYjROBSKx_mYpx85jAb8fRDzuM1YUq7TtICWKVAPS9tk4Mkcg=w828-h661-s-no-gm?authuser=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 200px;
+    border: 2px dashed purple;
+    color: var(--popcolor);
+    padding: 0 15px 15px;
+    margin: 0 20px 40px;
+    justify-items: center;
+}
+
+.projectsbox #main {
+    background: url("https://lh3.googleusercontent.com/pw/ADCreHeUKlxh5dfioDkQXLobdinZq-jR-6YPqF-rWB3o2C_WtZ7xIFE0M-FVcI43Y3mKb7pDvoRiUFPvFrPrklREwuMLMcyQpqQ_6SISPDbHpjC24JqQglt52zgIasuXslCbLlbKDhE3fXdEWyw6wDwMT_kPh9UdIFsYI5K-_-m7T_K8pSVfzAWU4jBx5lO5zZREocQFjhNOCBwPRgQy3a6KVexnp5qQMepVGKrTs4rrhWF1pLut_PNQHaOI0LR3FT2h6g0EccVf-FIQp_4AmsTonjQGdP-vwkShWMQtAGwiCC_fIXze4m3NuYnlMNrkEnx0ELqcJ5I3D0junEWDgWTsdFYhCVFo1x6kLMMvE8sDyzaX1x-OStoh8SBvrqdHwtywF1_K4EZVm46sH2oZ-b-ucSFGz9LlLd7_CEVC15CN_mpwgzfA5hIwWCLYZrrTuwsj9RRw8n91MW8j8PeJ-6znK5xx-mF5_S5dzIXv-6lor3rBvcUwmMmHiKAS4znsYTD-q0hIT9JSKwmDUlL5Cb8z5jeEgrvOYdJmo_PUm8ETmAdnO3vPPJoN5xRe3OApVJeV_Rl5zgQneLwJVVUU9vkv93umldeafpHrja9VfGFjuZADSn9GDeOyofZxXLYOpugagKlNIyqQkrOh_41AJpPwhVu6uHfagQPPV9P9QQZdF-7rAMiAjlUfQdNFljoeyjuJizGgetaqBT4_vSt_hDNqncJBEBy8JX-FKs8pkxFLzhszr_emCOeFiZdFer28Qsp6OmEtxEoAwrXiYBD9QRuSqgDFHHbdI5aqHqjc8FsyriM6nxdeDQ7XKb8nSasJr3VHgZDGqMjKGBVQRQIOPvgW08Qs2SHAcCA4Q8eLuclJs7OEtGAi8k6fAYviFycOxIXr7nlE_LKzhf_wAwohe79CXA=w212-h72-s-no-gm?authuser=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 2 2 600px;
+    padding: 5%;
+    font-size: larger;
+}
+/* #horiseon used to move title in box further up */
+#horiseon {
+    top: -65px
+}
+/* used to style the boxes within .projectsbox  */
+#poris {
+    background-color: aqua;
+    border: solid navy;
+    border-radius: 8px;
+    position: relative;
+    top: 60px;
+}
+/* used to adjust text in the titles for the project box */
+.cardprojects h3 {
+    font-size: 120%;
+    border: 2px solid navy;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: -18px;
+    background-color: aqua;
+}
+/* projects board ends here */
